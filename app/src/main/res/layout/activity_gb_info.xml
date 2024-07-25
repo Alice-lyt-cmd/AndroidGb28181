@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.hjq.bar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="国标信息" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/sb_gb_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_leftText="服务IP">
+
+                <com.hjq.widget.view.RegexEditText
+                    android:id="@+id/re_serverurl"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_100"
+                    android:hint=""
+                    android:textSize="@dimen/sp_18" />
+            </com.hjq.widget.layout.SettingBar>
+
+
+            <com.hjq.widget.layout.SettingBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_leftText="服务端口">
+
+                <com.hjq.widget.view.RegexEditText
+                    android:id="@+id/re_serverport"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_100"
+                    android:hint="5060"
+                    android:textSize="@dimen/sp_18"
+                    app:regexType="number" />
+            </com.hjq.widget.layout.SettingBar>
+
+            <com.hjq.widget.layout.SettingBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_leftText="服务域名">
+
+                <com.hjq.widget.view.RegexEditText
+                    android:id="@+id/re_domain"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_100"
+                    android:hint=""
+                    android:textSize="@dimen/sp_18" />
+            </com.hjq.widget.layout.SettingBar>
+
+
+            <com.hjq.widget.layout.SettingBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_leftText="服务ID">
+
+                <com.hjq.widget.view.RegexEditText
+                    android:id="@+id/re_serverid"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_100"
+                    android:hint=""
+                    android:textSize="@dimen/sp_18"
+                    app:regexType="number" />
+            </com.hjq.widget.layout.SettingBar>
+
+            <com.hjq.widget.layout.SettingBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_leftText="用户名">
+
+                <com.hjq.widget.view.RegexEditText
+                    android:id="@+id/re_usrename"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_100"
+                    android:hint=""
+                    android:textSize="@dimen/sp_18"
+                    app:regexType="number" />
+            </com.hjq.widget.layout.SettingBar>
+
+            <com.hjq.widget.layout.SettingBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_leftText="密码">
+
+                <com.hjq.widget.view.PasswordEditText
+                    android:id="@+id/pe_password"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_100"
+                    android:hint="请输入密码"
+                    android:text=""
+                    android:textSize="@dimen/sp_18" />
+            </com.hjq.widget.layout.SettingBar>
+
+            <com.hjq.widget.layout.SettingBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_leftText="设备ID">
+
+
+                <com.hjq.widget.view.RegexEditText
+                    android:id="@+id/re_deviceid"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_100"
+                    android:hint=""
+                    android:textSize="@dimen/sp_18"
+                    app:regexType="number" />
+            </com.hjq.widget.layout.SettingBar>
+
+            <com.hjq.widget.layout.SettingBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_leftText="通道ID">
+
+
+                <com.hjq.widget.view.RegexEditText
+                    android:id="@+id/re_channelid"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_100"
+                    android:hint=""
+                    android:textSize="@dimen/sp_18"
+                    app:regexType="number" />
+            </com.hjq.widget.layout.SettingBar>
+
+            <com.hjq.widget.layout.SettingBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_leftText="注册周期">
+
+
+                <com.hjq.widget.view.RegexEditText
+                    android:id="@+id/re_register_time"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_100"
+                    android:hint=""
+                    android:textSize="@dimen/sp_18"
+                    app:regexType="number" />
+            </com.hjq.widget.layout.SettingBar>
+
+            <com.hjq.widget.layout.SettingBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_leftText="心跳周期">
+
+
+                <com.hjq.widget.view.RegexEditText
+                    android:id="@+id/re_heart_time"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_100"
+                    android:hint=""
+                    android:textSize="@dimen/sp_18"
+                    app:regexType="number" />
+            </com.hjq.widget.layout.SettingBar>
+
+            <com.hjq.shape.view.ShapeTextView
+                android:id="@+id/st_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:gravity="center"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                android:text="保存"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:shape="rectangle"
+                app:shape_radius="@dimen/dp_10"
+                app:shape_shadowColor="@color/black10"
+                app:shape_shadowSize="10dp"
+                app:shape_solidColor="@color/white" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

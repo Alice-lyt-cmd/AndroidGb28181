@@ -16,9 +16,19 @@
         app:rightTitle="设置"
         app:rightTitleColor="@color/common_accent_color"
         app:rightTitleSize="@dimen/sp_14"
-        app:titleColor="@color/black"
-        app:title="预览界面" />
+        app:title="预览界面"
+        app:titleColor="@color/black" />
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.alice.cameralib.library.view.OpenGlView
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:aspectRatioMode="adjust" />
+    </RelativeLayout>
 
 
 </LinearLayout>

@@ -12,6 +12,7 @@ import androidx.core.content.ContextCompat;
 import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.LifecycleOwner;
 
+import com.alice.androidgb28181.other.MmkvHelper;
 import com.hjq.bar.TitleBar;
 import com.alice.androidgb28181.R;
 import com.alice.androidgb28181.aop.Log;
@@ -113,8 +114,9 @@ public final class AppApplication extends Application {
         // Activity 栈管理初始化
         ActivityManager.getInstance().init(application);
 
-        // MMKV 初始化
-        MMKV.initialize(application);
+//        // MMKV 初始化
+        MmkvHelper.initMmkv(application);
+//        MMKV.initialize(application);
 
         // 网络请求框架初始化
         OkHttpClient okHttpClient = new OkHttpClient.Builder()

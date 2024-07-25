@@ -65,6 +65,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".camera.CameraSettingActivity" />
+        <activity android:name=".camera.GbInfoActivity" />
+
+        <service android:name=".CameraService" />
     </application>
 
 </manifest>
