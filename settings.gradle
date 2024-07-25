@@ -1,0 +1,6 @@
+
+include ':app'
+//include ':gb28181demo'
+include ':library:widget'
+include ':library:base'
+include ':cameralib'
