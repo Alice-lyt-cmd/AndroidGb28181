@@ -54,7 +54,7 @@ afterEvaluate {
 
 dependencies {
     // 依赖 libs 目录下所有的 jar 和 aar 包
-    implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
+//    implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
 
     // AndroidX 库：https://github.com/androidx/androidx
     implementation 'androidx.appcompat:appcompat:1.3.1'
